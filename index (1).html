@@ -3,32 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Giới thiệu - Đức Mạnh</title>
+  <title>Giới thiệu - Như Quyên</title>
   <style>
+    /* Màu nền tươi hơn – tone lạnh mùa đông */
     :root {
-      --bg: #f3f4f6;
+      --bg: #e6f0ff;          /* xanh nhạt */
       --card: #ffffff;
-      --primary: #2563eb;
-      --secondary: #1e40af;
-      --text: #111827;
-      --muted: #6b7280;
+      --primary: #1b4fd6;     /* xanh đậm */
+      --secondary: #103a91;   /* xanh navy */
+      --text: #0f172a;
+      --muted: #64748b;
+      --winter: #dce9ff;      /* nền nhẹ thêm */
     }
+
     * { box-sizing: border-box; }
+
     body {
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
       margin: 0;
-      background: var(--bg);
+      background: var(--winter);
       color: var(--text);
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: #fff;
       padding: 48px 20px;
       text-align: center;
+      border-bottom: 6px solid #ff7a29; /* điểm nhấn cam */
     }
     header h1 { font-size: 36px; margin: 0 0 10px; }
-    header p { font-size: 16px; margin: 0; opacity: 0.9; }
+    header p { font-size: 16px; margin: 0; opacity: 0.95; }
 
     .container {
       max-width: 960px;
@@ -43,11 +49,12 @@
       overflow: hidden;
       display: flex;
       flex-wrap: wrap;
+      border-left: 6px solid #ff7a29; /* accent cam nhẹ */
     }
 
     .left {
       flex: 1 1 280px;
-      background: #eef2ff;
+      background: #eef5ff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,6 +82,7 @@
     .right h2 {
       margin: 0 0 8px;
       font-size: 26px;
+      font-family: "Comic Sans MS";
     }
     .right .meta {
       color: var(--muted);
@@ -82,10 +90,10 @@
     }
 
     .about {
-      background: #f9fafb;
+      background: #f1f6ff;
       padding: 16px;
       border-radius: 12px;
-      border: 1px solid #e5e7eb;
+      border: 1px solid #c6d8ff;
       min-height: 120px;
     }
 
@@ -94,6 +102,7 @@
       padding: 20px 0;
       color: var(--muted);
       font-size: 14px;
+      margin-top: 20px;
     }
 
     @media(max-width: 720px){
@@ -106,32 +115,31 @@
 <body>
   <header>
     <h1>Giới thiệu bản thân</h1>
-    <p>Trang cá nhân của Đức Mạnh</p>
+    <p>Trang cá nhân của Như Quyên</p>
   </header>
 
   <div class="container">
     <div class="card">
       <div class="left">
         <div class="avatar">
-          <img src="https://raw.githubusercontent.com/daisubinta/nguyenducmanh/refs/heads/main/profile.jpg" alt="Ảnh cá nhân">
+          <!-- Đổi link ảnh này thành ảnh của bạn -->
+          <img src="https://i.pinimg.com/1200x/c1/01/4f/c1014fb763e093030a1e9e4e5f1dc250.jpg" alt="Ảnh cá nhân">
         </div>
       </div>
 
       <div class="right">
-        <h2>Đức Mạnh</h2>
-        <div class="meta">Học sinh lớp 12 Anh — THPT Chuyên Bến Tre</div>
+        <h2>Như Quyên</h2>
+        <div class="meta">30/03/2008 — muadonghanoi</div>
 
         <div class="about">
           <p>
-            Xin chào! Mình là <strong>Đức Mạnh</strong>, hiện đang học lớp 12 Anh tại trường THPT Chuyên Bến Tre.
-            Mình đam mê tiếng Anh, yêu thích học hỏi và luôn cố gắng phát triển bản thân mỗi ngày. Đây là trang giới thiệu
-            cá nhân của mình — nơi chia sẻ một chút thông tin để mọi người hiểu rõ hơn về mình.
+            Xin chào! Tui là Phan Như Quyên 12 Anh.
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <footer>© 2025 — Trang cá nhân của Đức Mạnh</footer>
+  <footer>© 2025 — Trang cá nhân của Như Quyên</footer>
 </body>
 </html>
